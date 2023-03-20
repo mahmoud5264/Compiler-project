@@ -7,21 +7,6 @@ public class TempJavaListener extends JavaParserBaseListener {
     public TempJavaListener(TokenStreamRewriter rewriter) {
         this.rewriter = rewriter;
         this.blockNumber = 0;
-
-        if(true){
-            if(false){
-
-            }
-            else if(true){
-
-            }
-            else{
-
-            }
-        }
-        else{
-
-        }
     }
 
     @Override
