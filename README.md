@@ -7,7 +7,11 @@ Build a dynamic code analyzer for Java Language to generate statement and branch
 
 ## :memo: First Task
 
-Write a Java program based on Antlr that takes a java file as an input and outputs amodified intermediate java file (injected code) as demonstrated in the sectionwhere:you add comment in each block of this code indicates the number of this block , itshould look like this :// block number 3
+Write a Java program based on Antlr that takes a java file as an input and outputs amodified intermediate java file (injected code) as demonstrated in the section where you add comment in each block of this code indicates the number of this block.
+
+It should look like this:
+
+// block number 3
 
 ## :bulb: Our solution 
 
