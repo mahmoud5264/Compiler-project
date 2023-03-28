@@ -12,6 +12,10 @@ public class TempJavaListener extends JavaParserBaseListener {
     @Override
     public void enterBlock(JavaParser.BlockContext ctx) {
         this.blockNumber++;
-        rewriter.insertAfter(ctx.getStart(),"//block number " + this.blockNumber);
+        rewriter.insertAfter(ctx.getStart(),"//block number " + this.blockNumber+"\n");
+        rewriter.insertAfter(ctx.getStart(),"FileWriter write"+this.blockNumber+" = new FileWriter(\"Output.txt\",true);\n");
+        rewriter.insertAfter(ctx.getStart(),"write"+this.blockNumber+".write(\"block number "+this.blockNumber+" is visited\\n\");\n");
+        rewriter.insertAfter(ctx.getStart(),"write"+this.blockNumber+".close();\n");
+   
     }
 }
