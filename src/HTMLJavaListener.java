@@ -117,7 +117,6 @@ public class HTMLJavaListener extends JavaParserBaseListener {
 
     @Override
     public void enterExpression(JavaParser.ExpressionContext ctx) {
-        System.out.println(ctx.getText());
         if (isInside && ctx.AND() == null && ctx.OR() == null) {
             endExpression++;
             isInside = false;

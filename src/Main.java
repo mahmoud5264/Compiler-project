@@ -63,10 +63,16 @@ public class Main {
             else if (token.getText().equals(">")) {
                 rewriter.replace(token, "&gt;");
             }
+            else if (token.getText().equals(">=")) {
+                rewriter.replace(token, "&gt;=");
+            }
+            else if (token.getText().equals("<=")) {
+                rewriter.replace(token, "&lt;=");
+            }
         }
 
         walker = new ParseTreeWalker();
-        walker.walk(new TempJavaListener2(rewriter), tree);
+        walker.walk(new HTMLJavaListener(rewriter), tree);
         output = new File("final.html");
         output.createNewFile();
         write = new FileWriter("final.html");
