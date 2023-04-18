@@ -39,16 +39,32 @@ write3.close();
 
         int a=3;
         int b=4;
-        for(int i=0;i<a;i++){//block number 4
+        if((AddExpression(2)||a<b) || (AddExpression(3)||a==b)){//block number 4
 try{
 FileWriter write4 = new FileWriter("blocks.txt",true);
 write4.write("block number 4 is visited\n");
 write4.close();
 }catch (IOException e) {throw new RuntimeException(e);}
 
-            i++;
-        }
+            if((AddExpression(4)||a==5)){//block number 5
+try{
+FileWriter write5 = new FileWriter("blocks.txt",true);
+write5.write("block number 5 is visited\n");
+write5.close();
+}catch (IOException e) {throw new RuntimeException(e);}
 
+                a++;
+            }
+        }
+        if((AddExpression(5)||a>b) || (AddExpression(6)||a==b)){//block number 6
+try{
+FileWriter write6 = new FileWriter("blocks.txt",true);
+write6.write("block number 6 is visited\n");
+write6.close();
+}catch (IOException e) {throw new RuntimeException(e);}
+
+            return;
+        }
     }
 
 }

@@ -1,0 +1,4 @@
+expression number 2 is visited
+expression number 4 is visited
+expression number 5 is visited
+expression number 6 is visited

@@ -1,3 +1,2 @@
 block number 3 is visited
 block number 4 is visited
-block number 4 is visited

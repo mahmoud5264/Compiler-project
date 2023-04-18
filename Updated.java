@@ -12,10 +12,14 @@ public class Main {
     public static void main(String[] args) throws Exception {
         int a=3;
         int b=4;
-        for(int i=0;i<a;i++){
-            i++;
+        if(a<b || a==b){
+            if(a==5){
+                a++;
+            }
         }
-
+        if(a>b || a==b){
+            return;
+        }
     }
 
 }
