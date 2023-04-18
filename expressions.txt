@@ -1,4 +1,0 @@
-expression number 1 is visited
-expression number 2 is visited
-expression number 3 is visited
-expression number 4 is visited
